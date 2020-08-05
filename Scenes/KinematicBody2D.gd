@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 
-const SPEED = 180
+const SPEED = 300
 func _process(delta):
 	var direction = Vector2()
 	if Input.is_action_pressed("ui_down"):
@@ -12,7 +12,7 @@ func _process(delta):
 		direction.x += -1
 	if Input.is_action_pressed("ui_right"):
 		direction.x += 1
-	var collosion = move_and_collide(direction.normalized()*SPEED*delta)
+	var collision = move_and_collide(direction.normalized()*SPEED*delta)
 	update_animation(direction)
 	
 
