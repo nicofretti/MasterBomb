@@ -1,0 +1,192 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Bombarolo/8-Tile-Sets/Tile-Sets (64-64).png" type="Texture" id=1]
+
+[sub_resource type="PhysicsMaterial" id=4]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32.4598, 29.9677 )
+
+[node name="BorderTileset" type="Node"]
+
+[node name="BorderLeft2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderLeft2"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderLeft2/Area"]
+shape = SubResource( 2 )
+
+[node name="Border" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="Border"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/Area"]
+shape = SubResource( 2 )
+
+[node name="BorderRight2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 0, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderRight2"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderRight2/Area"]
+shape = SubResource( 2 )
+
+[node name="Border2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 128, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="Border2"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border2/Area"]
+shape = SubResource( 2 )
+
+[node name="BorderLeft" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderLeft"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderLeft/Area"]
+shape = SubResource( 2 )
+
+[node name="BorderRight3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 128, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderRight3"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderRight3/Area"]
+shape = SubResource( 2 )
+
+[node name="BorderLeft3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 64, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderLeft3"]
+visible = false
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderLeft3/Area"]
+visible = false
+shape = SubResource( 2 )
+
+[node name="BorderRight" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 64, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderRight"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderRight/Area"]
+shape = SubResource( 2 )
+
+[node name="BorderCornerLeft" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 192, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderCornerLeft"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderCornerLeft/Area"]
+shape = SubResource( 2 )
+
+[node name="BorderCornerLeft2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 256, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderCornerLeft2"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderCornerLeft2/Area"]
+shape = SubResource( 2 )
+
+[node name="BorderCornerRight" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 192, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderCornerRight"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderCornerRight/Area"]
+shape = SubResource( 2 )
+
+[node name="BorderCornerRight2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 256, 64, 64 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area" type="StaticBody2D" parent="BorderCornerRight2"]
+physics_material_override = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderCornerRight2/Area"]
+shape = SubResource( 2 )
