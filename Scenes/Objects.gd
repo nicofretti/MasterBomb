@@ -15,7 +15,7 @@ func _ready():
 		if tile_name == "Candela":
 			var l = Light2D.new()
 			l.texture= load("res://TileSet/Bomarolo/CandelaLuceAnimation.tres")
-			var correct = Vector2(75,10)
+			var correct = Vector2(30,0)
 			print(.map_to_world(pos)+correct)
 			l.position = .map_to_world(pos)+correct
 			.add_child(l)
