@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/9.png-efc3a3f3093ac1344e1f3decade7e8a1.stex"
+path="res://.import/9.png-f99c916a6e1be7142a6ff5af36831a0d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bombarolo/1-Player-Bomb Guy/2-Run/9.png"
-dest_files=[ "res://.import/9.png-efc3a3f3093ac1344e1f3decade7e8a1.stex" ]
+source_file="res://Assets/Bombarolo/1-Player-Bomb Guy/12-Run Back/9.png"
+dest_files=[ "res://.import/9.png-f99c916a6e1be7142a6ff5af36831a0d.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -30,5 +30,5 @@ process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
