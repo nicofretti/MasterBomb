@@ -1,19 +1,18 @@
 extends KinematicBody2D
 
 
-const SPEED = 300
-func _process(delta):
+const gravity = 2
+func _physics_process(delta):
 	var direction = Vector2()
-	if Input.is_action_pressed("ui_down"):
-		direction.y += 1
-	if Input.is_action_pressed("ui_up"):
-		direction.y += -1
-	if Input.is_action_pressed("ui_left"):
-		direction.x += -1
-	if Input.is_action_pressed("ui_right"):
-		direction.x += 1
-	var collision = move_and_collide(direction.normalized()*SPEED*delta)
+	direction.x += (Input.get_action_strength("ui_right")*1 - Input.get_action_strength("ui_left")*1)
 	update_animation(direction)
+	
+	if Input.is_action_just_pressed("ui_up") && is_on_floor():
+		direction.y = -35
+	else:
+		direction.y += gravity
+	move_and_slide(direction*200, Vector2(0,-1))
+	
 	
 
 func update_animation(direction):
@@ -29,4 +28,4 @@ func update_animation(direction):
 	elif direction.x==1:
 		$Sprite.play("Run")
 		$Sprite.flip_h=false
-	
+
